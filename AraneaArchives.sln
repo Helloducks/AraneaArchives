@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AraneaArchives", "AraneaArchives\AraneaArchives.csproj", "{A1C4E03D-C7E1-4C56-9256-051150EF98CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1C4E03D-C7E1-4C56-9256-051150EF98CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C4E03D-C7E1-4C56-9256-051150EF98CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C4E03D-C7E1-4C56-9256-051150EF98CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C4E03D-C7E1-4C56-9256-051150EF98CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EAAF6C5-48B9-45D4-BB3D-ED9293197DB9}
+	EndGlobalSection
+EndGlobal
