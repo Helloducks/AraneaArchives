@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AraneaArchives.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AraneaArchivesContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AraneaArchivesContext") ?? throw new InvalidOperationException("Connection string 'AraneaArchivesContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
