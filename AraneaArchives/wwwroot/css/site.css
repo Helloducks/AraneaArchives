@@ -13,10 +13,24 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    font-family: 'Cutive Mono', monospace;
+    
 }
 
+
 body {
-  margin-bottom: 60px;
+    color : aliceblue;
+    background-color: black;
+    margin-bottom: 60px;
+    font-family: 'Cutive Mono', monospace;
+}
+.btn-primary {
+    background-color : whitesmoke;
+    color : black;
+}
+.colorful-text {
+    color: aliceblue;
+}
 }
