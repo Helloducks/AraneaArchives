@@ -13,6 +13,7 @@ namespace AraneaArchives.Controllers
         {
             _context = context;
         }
+        //this will grab all the notes file linked to clicked repo
         public async Task<IActionResult> Index(int? id)
         {
             if (id == null || _context.Notes == null)
@@ -28,7 +29,7 @@ namespace AraneaArchives.Controllers
             
             return View(directories);
         }
-
+        //this will show the contents of the clicked note
         public async Task<IActionResult> OpenPage(int? id)
         {
             if (id == null || _context.Notes == null)
