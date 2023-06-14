@@ -5,5 +5,18 @@
 @{
 }
 <p>
+    <div class="card">
+  <div class="card-header">
+    @Model.NotesName
+  </div>
+  <div class="card-body">
+      <p>
     @Html.DisplayFor(n=>n.NotesContents)
+    </p>
+    
+    <a asp-controller="Notes" asp-action="Edit" asp-route-id="@Model.NotesId" class="btn btn-primary">Edit</a>
+    <a asp-controller="Notes" asp-action="Delete" asp-route-id="@Model.NotesId" class="btn btn-danger">Delete</a>
+
+</div>
+    </div>
 </p>
