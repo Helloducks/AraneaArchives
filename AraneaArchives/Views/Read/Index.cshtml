@@ -6,6 +6,8 @@
 }
 @foreach(var n in Model){
     <p>
+        <a asp-controller="Read" asp-action="OpenPage" asp-route-id="@n.NotesId">
         @Html.DisplayFor(modelItem => n.NotesName)
+            </a>
     </p>
 }

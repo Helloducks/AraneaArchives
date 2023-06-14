@@ -35,7 +35,7 @@ namespace AraneaArchives.Controllers
                 return NotFound();
             }
 
-            var notes = _context.Notes.FindAsync(id);
+            var notes = await _context.Notes.FindAsync(id);
             if (notes == null)
             {
                 return NotFound();
