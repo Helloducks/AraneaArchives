@@ -22,7 +22,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                <a asp-controller="Read" asp-action="Index" asp-route-id="@item.DirectoryId">
                 @Html.DisplayFor(modelItem => item.DirectoryName)
+                </a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.DirectoryId">Edit</a> |

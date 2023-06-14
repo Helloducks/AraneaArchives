@@ -12,6 +12,7 @@ namespace AraneaArchives.Controllers
 {
     public class NotesController : Controller
     {
+        //this below statement is the connection to the database.
         private readonly AraneaArchivesContext _context;
 
         public NotesController(AraneaArchivesContext context)

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<AraneaArchives.Models.Notes>
+@{
+    ViewData["Title"] = "Read";
+}
+@*<h1>@ViewData["DirTitle"]</h1>*@
+
+@foreach(var n in Model)
+{
+    <div class="colorful-text">
+    <p>
+        XXX
+        @Html.DisplayFor(modelItem => n.NoteName);
+    </p>  
+    </div>
+}
