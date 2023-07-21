@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>
@@ -21,11 +21,13 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            
             <td>
                 <a asp-controller="Read" asp-action="Index" asp-route-id="@item.DirectoryId">
                 @Html.DisplayFor(modelItem => item.DirectoryName)
-                    </a>
+                  </a> 
             </td>
+             
             <td>
                     @if (User.Identity.IsAuthenticated)
                     {

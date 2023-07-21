@@ -6,7 +6,7 @@
     
 }
 <h1>Notes List</h1>
-<div class="list-group">
+@*<div class="list-group">
 
 @foreach(var n in Model){
     <p>
@@ -17,5 +17,21 @@
             
     </p>
 }
+
+</div>*@
+<div class="card">
+<ul class="list-group list-group-flush"> 
+   @foreach(var n in Model){
+   
+            
+                <a asp-controller="Read" asp-action="OpenPage" asp-route-id="@n.NotesId" >
+                    <li class="list-group-item">
+        @Html.DisplayFor(modelItem => n.NotesName)
+        </li>
+            </a>
+            
+    
+} 
+</ul>
 
 </div>

@@ -1,7 +1,28 @@
 html {
   font-size: 14px;
 }
-
+body {
+    background-color: #091104;
+    color: #e2f6d5;
+    font-family:'Courier New';
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ad63de;
+    border-color: #1861ac;
+}
+    .btn-primary:hover {
+        background-color: #961de7;
+    }
+th,td {
+    color: #e2f6d5;
+}
+.card {
+    background-color: #152313;
+}
+.card-header {
+    background-color: #1e2b1d;
+}
 @media (min-width: 768px) {
   html {
     font-size: 16px;
