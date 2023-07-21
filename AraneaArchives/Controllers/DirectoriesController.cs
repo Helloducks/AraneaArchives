@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using AraneaArchives.Data;
 using AraneaArchives.Models;
 using Directory = AraneaArchives.Models.Directory;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AraneaArchives.Controllers
 {
+    [Authorize]
     public class DirectoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,7 +21,7 @@ namespace AraneaArchives.Controllers
         {
             _context = context;
         }
-
+        [AllowAnonymous]
         // GET: Directories
         public async Task<IActionResult> Index()
         {
@@ -27,7 +29,7 @@ namespace AraneaArchives.Controllers
                           View(await _context.Directory.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Directory'  is null.");
         }
-
+        [AllowAnonymous]
         // GET: Directories/Details/5
         public async Task<IActionResult> Details(int? id)
         {

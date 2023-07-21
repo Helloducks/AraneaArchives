@@ -27,9 +27,16 @@
                     </a>
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.DirectoryId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DirectoryId">Details</a> |
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.DirectoryId">Edit</a>
+                    }
+                    |
+                    <a asp-action="Details" asp-route-id="@item.DirectoryId">Details</a> |
+                    @if (User.Identity.IsAuthenticated)
+                    {
                 <a asp-action="Delete" asp-route-id="@item.DirectoryId">Delete</a>
+                    }
             </td>
         </tr>
 }
