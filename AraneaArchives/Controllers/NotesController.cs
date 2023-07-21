@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AraneaArchives.Data;
 using AraneaArchives.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AraneaArchives.Controllers
 {
+    [Authorize]
     public class NotesController : Controller
     {
         private readonly ApplicationDbContext _context;
